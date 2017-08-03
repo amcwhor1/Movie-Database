@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.view.AdminLoginControl">
+   <children>
+      <TextField fx:id="unTF" layoutX="217.0" layoutY="270.0" promptText="Username" />
+      <Text layoutX="181.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Login" textAlignment="CENTER" wrappingWidth="238.5703125">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="loginBT" layoutX="307.0" layoutY="351.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+      <Button fx:id="backBT" layoutX="228.0" layoutY="351.0" mnemonicParsing="false" onAction="#loadPrevPage" text="Back" />
+      <PasswordField fx:id="pwPF" layoutX="217.0" layoutY="307.0" promptText="Password" />
+      <Text fx:id="unpw" layoutX="228.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Username &amp; Password">
+         <font>
+            <Font size="10.0" />
+         </font></Text>
+      <ImageView fitHeight="151.0" fitWidth="205.0" layoutX="192.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Google%20Drive/CURRENT%20Semester/Software%20Development%20I/Project/Pictures/film-director.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.view.UserMovieListControl">
+   <children>
+      <Label fx:id="isConnected" layoutX="433.0" layoutY="16.0" prefHeight="27.0" prefWidth="108.0" text="MDB" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" />
+      <Text layoutX="23.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Movie Listing" wrappingWidth="321.5869140625">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <ListView fx:id="moviesLV" layoutX="314.0" layoutY="68.0" prefHeight="312.0" prefWidth="263.0" />
+      <Button fx:id="backBT" layoutX="23.0" layoutY="355.0" mnemonicParsing="false" onAction="#loadPrevPage" text="Go to Previous Page" />
+      <ImageView fitHeight="156.0" fitWidth="228.0" layoutX="24.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Google%20Drive/CURRENT%20Semester/Software%20Development%20I/Project/Pictures/user.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="108.0" text="Please select a movie you want to">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="128.0" text="to see more information about!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="42.0" text="Movie Titles">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="56.0" text="Welcome User!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="genrePageBT" layoutX="195.0" layoutY="355.0" mnemonicParsing="false" onAction="#loadGenrePage" text="Genre Page" />
+      <Label layoutX="165.0" layoutY="317.0" text="Click Genre Page to sees" />
+      <Label layoutX="165.0" layoutY="334.0" text=" a list of genre" />
+      <Button fx:id="userHomeBT" layoutX="506.0" layoutY="17.0" mnemonicParsing="false" onAction="#loadUserHomePage" text="Home List" />
+   </children>
+</AnchorPane>
